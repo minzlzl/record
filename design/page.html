@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>상세페이지</title>
+  <style>
+    html, body{position: relative;}
+    body {margin: 0; padding: 0;}
+    .swiper {width: 100%; height: 100%; overflow: auto;}
+    .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
+    .swiper-slide img {display: block; width: auto; height: auto; object-fit: cover;}
+  </style>
+</head>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./imgs/page/1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imgs/page/2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imgs/page/3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imgs/page/4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./imgs/page/5.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
