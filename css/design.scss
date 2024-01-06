@@ -1,0 +1,13 @@
+@import "_reset";
+
+.design{
+  background-color: #fff;
+  width: 1560px;
+  padding: 60px 50px;
+  >p{
+    font-size: 30px;
+    font-family: 'SBAggroB';
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+}

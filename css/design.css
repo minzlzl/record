@@ -80,32 +80,14 @@ a {
   align-items: center;
 }
 
-.index {
+.design {
   background-color: #fff;
   width: 1560px;
   padding: 60px 50px;
 }
-.index > p {
+.design > p {
   font-size: 30px;
   font-family: "SBAggroB";
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
-}
-.index .swiper {
-  padding: 30px 10px;
-}
-.index .swiper .swiper-wrapper .swiper-slide {
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.index .swiper .swiper-wrapper .swiper-slide > a {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  padding: 60px 0;
-  font-size: 20px;
-  color: #555;
 }
