@@ -49,6 +49,7 @@ a{text-decoration: none; color:#000;}
           justify-content: space-between;
           align-items: center;
           font-weight: 500;
+          transition: .5s;
           >span{
             width: 26px;
             height: 26px;
@@ -60,6 +61,36 @@ a{text-decoration: none; color:#000;}
             justify-content: center;
             align-items: center;
           }
+          // &::after{
+          //   content: "";
+          //   position: absolute;
+          //   left: 50%;
+          //   bottom: 0;
+          //   width: 0;
+          //   height: 4px;
+          //   background-color: aqua;
+          //   transition: all .5s;
+          // }
+          // &::before{
+          //   content: "";
+          //   position: absolute;
+          //   right: 50%;
+          //   bottom: 0;
+          //   width: 0;
+          //   height: 4px;
+          //   background-color: aqua;
+          //   transition: all .5s;
+          // }
+          &:hover{
+            color:#000;
+            font-weight: 600;
+          }
+          // &:hover::after{
+          //   width: 50%;
+          // }
+          // &:hover::before{
+          //   width: 50%;
+          // }
         }
       }
     }

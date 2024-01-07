@@ -1,0 +1,63 @@
+@import "_reset";
+
+.javascript{
+  background-color: #fff;
+  width: 1560px;
+  padding: 60px 50px;
+  >p{
+    font-size: 30px;
+    font-family: 'SBAggroB';
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+  .list{
+    padding:30px 10px;
+    .list_name{
+      >ul{
+        display: flex;
+        background-color: #55C297;
+        justify-content: space-between;
+        padding: 30px 50px;
+        border-radius: 5px;
+        li{
+          font-size: 20px;
+          color: #fff;
+          width: 150px;
+          text-align: center;
+          font-weight: 500;
+          &:nth-of-type(2){
+            width: 800px;
+          }
+        }
+      }
+    }
+    >ul{
+      >li{
+        transition: .5s;
+        >a{
+          font-size: 18px;
+          color: #555;
+          padding: 30px 50px;
+          display: block;
+          >ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >li{
+              width: 150px;
+              text-align: center;
+              color: #555;
+              &:nth-of-type(2){
+                width: 800px;
+              }
+            }
+          }
+        }
+        &:hover{
+          background-color: #DDF3EA;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

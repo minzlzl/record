@@ -85,31 +85,60 @@ a {
   font-weight: 600;
 }
 
-.design {
+.javascript {
   background-color: #fff;
   width: 1560px;
   padding: 60px 50px;
 }
-.design > p {
+.javascript > p {
   font-size: 30px;
   font-family: "SBAggroB";
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
 }
-.design > ul {
+.javascript .list {
   padding: 30px 10px;
+}
+.javascript .list .list_name > ul {
+  display: flex;
+  background-color: #55C297;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-radius: 5px;
+}
+.javascript .list .list_name > ul li {
+  font-size: 20px;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+}
+.javascript .list .list_name > ul li:nth-of-type(2) {
+  width: 800px;
+}
+.javascript .list > ul > li {
+  transition: 0.5s;
+}
+.javascript .list > ul > li > a {
+  font-size: 18px;
+  color: #555;
+  padding: 30px 50px;
+  display: block;
+}
+.javascript .list > ul > li > a > ul {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 }
-.design > ul > li {
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  width: 290px;
-  height: 200px;
-}
-.design > ul > li > a {
-  font-size: 20px;
+.javascript .list > ul > li > a > ul > li {
+  width: 150px;
+  text-align: center;
   color: #555;
-  display: inline-block;
+}
+.javascript .list > ul > li > a > ul > li:nth-of-type(2) {
+  width: 800px;
+}
+.javascript .list > ul > li:hover {
+  background-color: #DDF3EA;
+  border-radius: 5px;
 }

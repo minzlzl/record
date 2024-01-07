@@ -67,6 +67,7 @@ a {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  transition: 0.5s;
 }
 .record_wrap .nav > ul > li > a > span {
   width: 26px;
@@ -78,6 +79,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.record_wrap .nav > ul > li > a:hover {
+  color: #000;
+  font-weight: 600;
 }
 
 .index {
