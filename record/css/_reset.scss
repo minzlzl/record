@@ -1,0 +1,98 @@
+body, ul, li, p, h1, h2, figure{margin: 0; padding: 0;}
+figure{font-size: 0;}
+li{list-style: none;}
+a{text-decoration: none; color:#000;}
+*{box-sizing: border-box;}
+*{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.record_wrap{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  .nav{
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 50px;
+    >p{
+      font-family: 'SBAggroB';
+      font-size: 30px;
+      margin-bottom: 80px;
+      // text-transform: uppercase;
+      >span{
+        color: #55C297;
+        font-family: 'SBAggroB';
+      }
+    }
+    >ul{
+      width: 100%;
+      >li{
+        padding-bottom: 40px;
+        >a{
+          font-size: 22px;
+          color: #555;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 500;
+          transition: .5s;
+          >span{
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-size: 16px;
+            background-color: #55C297;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          // &::after{
+          //   content: "";
+          //   position: absolute;
+          //   left: 50%;
+          //   bottom: 0;
+          //   width: 0;
+          //   height: 4px;
+          //   background-color: aqua;
+          //   transition: all .5s;
+          // }
+          // &::before{
+          //   content: "";
+          //   position: absolute;
+          //   right: 50%;
+          //   bottom: 0;
+          //   width: 0;
+          //   height: 4px;
+          //   background-color: aqua;
+          //   transition: all .5s;
+          // }
+          &:hover{
+            color:#000;
+            font-weight: 600;
+          }
+          // &:hover::after{
+          //   width: 50%;
+          // }
+          // &:hover::before{
+          //   width: 50%;
+          // }
+        }
+      }
+    }
+  }
+}
