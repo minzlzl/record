@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>Document</title>
+  <style>
+    .wrap{display:flex;flex-direction:column;width:100%;height: 100vh;align-items:center;justify-content:center;}
+    button{border:none;background-color:#000;color:#fff;border-radius:5px;width:50px;height:30px;cursor:pointer;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <button>시작</button>
+    <p></p>
+    <div>
+      <button class="plus">+</button>
+      <button class="minus">-</button>  
+    </div>
+  </div>
+
+  <script>
+    $('.wrap button:nth-of-type(1)').on("click",function(){
+      $('p').text('0');
+    });
+    let a = 0;
+    $('.plus').on("click",function(){
+      a++;
+      $('p').html(a);
+    });
+    $('.minus').on("click",function(){
+      a--;
+      $('p').html(a);
+    });
+
+    //자바스크립트 
+    // const plus = document.querySelector('.plus'),
+    //       minus = document.querySelector('.minus'),
+    //       elP = document.querySelector('p');
+    // let a = 0;
+    // plus.onclick = function(){
+    //   a++;
+    //   elP.innerHTML = a;
+    // };
+    // minus.onclick = function(){
+    //   a--;
+    //   elP.innerHTML = a;
+    // };
+  </script>
+</body>
+</html>
