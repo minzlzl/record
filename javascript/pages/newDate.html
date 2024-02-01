@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>시간알려줘</button>
+  <p></p>
+  <script>
+    const elP = document.querySelector('p'),
+            btn = document.querySelector('button');
+
+    const newDate = new Date();
+
+    const year = newDate.getFullYear();
+    const month = newDate.getMonth() + 1; //월은 +1해줘야함
+    const date = newDate.getDate();
+    const hour = newDate.getHours();
+    const minute = newDate.getMinutes();
+    const second = newDate.getSeconds();
+
+    btn.onclick = function(){
+      elP.innerText = `${year}년 ${month}월 ${date}일 ${hour}시 ${minute}분 ${second}초`
+    }
+  </script>
+</body>
+</html>

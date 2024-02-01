@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<style>
+  .wrap{width: 100%; text-align: center;}
+  .cont{margin-bottom: 30px;}
+  .cont ul{padding:0; width: 30%; margin: 0 auto;}
+  .cont ul li{list-style: none; margin-bottom: 10px; padding:10px; background-color: #eee; display: none;}
+  .cont ul li.active{display: block;}
+  .btn a{text-decoration: none; font-weight: bold;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="cont">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+      </ul>
+    </div>
+    <div class="btn"><a href="#">더보기</a></div>
+  </div>
+  <script>
+    const contLi = document.querySelectorAll('.cont ul li'),
+          btnA = document.querySelector('.btn a');
+
+    // window.onload = function(){
+    //   contLi.forEach(function(v){
+    //     contLi[0].classList.add('active')
+    //     contLi[1].classList.add('active')
+    //     contLi[2].classList.add('active')
+    //     contLi[3].classList.add('active')
+    //     contLi[4].classList.add('active')
+    //   })
+    // }
+    // btnA.onclick = function(){
+    //   contLi.forEach(function(v){
+    //     contLi[5].classList.add('active')
+    //     contLi[6].classList.add('active')
+    //     contLi[7].classList.add('active')
+    //     contLi[8].classList.add('active')
+    //   })
+    // }
+
+    //지선생 코드
+    let currentIndex = 0; // 현재 보이는 li의 마지막 인덱스
+
+    window.onload = function(){
+      // 처음 다섯 개의 li에 'active' 클래스 추가
+      Array.from(contLi).slice(currentIndex, currentIndex + 5).forEach(function(li){
+        li.classList.add('active');
+      });
+      currentIndex += 5; // 다음 번에 보일 li의 시작 인덱스 업데이트
+    }
+
+    btnA.onclick = function(){
+  // 현재 보이지 않는 다음 다섯 개의 li에 'active' 클래스 추가
+  Array.from(contLi).slice(currentIndex, currentIndex + 5).forEach(function(li) {
+    li.classList.add('active');
+  });
+  currentIndex += 5; // 다음 번에 보일 li의 시작 인덱스 업데이트
+}
+  </script>
+</body>
+</html>
